@@ -18,7 +18,8 @@
 		"solidity-va.tools.surya.option.negModifiers": true,
 		"solidity-va.preview.markdown": false,
 		"files.autoSave": "onWindowChange",
-		"editor.renderWhitespace": "trailing"
+		"editor.renderWhitespace": "trailing",
+		"typescript.format.insertSpaceAfterTypeAssertion": false
 	},
 	"launch": {
 		"configurations": [

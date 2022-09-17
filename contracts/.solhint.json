@@ -1,5 +1,4 @@
-.solhint.json
-{
+ { 
     "rules": {
       "no-unused-vars": "error",
       "const-name-snakecase": "error",

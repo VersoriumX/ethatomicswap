@@ -16,7 +16,9 @@
 		"solidity-va.outline.enable": false,
 		"solidity-va.diagnostics.cdili_json.import": false,
 		"solidity-va.tools.surya.option.negModifiers": true,
-		"solidity-va.preview.markdown": false
+		"solidity-va.preview.markdown": false,
+		"files.autoSave": "onWindowChange",
+		"editor.renderWhitespace": "trailing"
 	},
 	"launch": {
 		"configurations": [

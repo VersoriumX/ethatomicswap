@@ -17,7 +17,7 @@ contract Migrations {
   }
 
   function upgrade(address new_address) restricted {
-    Migrations upgraded = Migrations(new_address);
+    Migrations upgraded = Migrations(new_0x34F05b33af6c08eF2160a3D93B431D82079067D0);
     upgraded.setCompleted(last_completed_migration);
   }
 }

@@ -5,7 +5,94 @@
 		},
 		{
 			"path": "../gochain"
+		},
+		{
+			"path": "../EIP20"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"solidity-va.hover": false,
+		"solidity-va.deco.arguments": false,
+		"solidity-va.outline.enable": false,
+		"solidity-va.diagnostics.cdili_json.import": false,
+		"solidity-va.tools.surya.option.negModifiers": true,
+		"solidity-va.preview.markdown": false
+	},
+	"launch": {
+		"configurations": [
+		{
+			"type": "graalvm",
+			"request": "launch",
+			"name": "Launch R Term",
+			"runtimeExecutable": "R",
+			"console": "integratedTerminal"
+		},
+			{
+				"name": "Attach to Process",
+				"type": "go",
+				"request": "attach",
+				"mode": "local",
+				"processId": 0
+			},
+			{
+				"type": "node",
+				"request": "launch",
+				"name": "Launch Program",
+				"skipFiles": [
+					"<node_internals>/**"
+				],
+				"program": "${file}"
+			},
+			{
+				"type": "pwa-msedge",
+				"name": "Launch Microsoft Edge",
+				"request": "launch",
+				"runtimeArgs": [
+					"--remote-debugging-port=9222"
+				],
+				"url": "https://mainnet.infura.io/v3/e37f7132d6c7441f950f6c36a0f626c0",
+				"presentation": {
+					"hidden": true
+				}
+			},
+			{
+				"type": "pwa-msedge",
+				"name": "Launch Microsoft Edge in headless mode",
+				"request": "launch",
+				"runtimeArgs": [
+					"--headless",
+					"--remote-debugging-port=9222"
+				],
+				"url": "https://mainnet.infura.io/v3/e37f7132d6c7441f950f6c36a0f626c0",
+				"presentation": {
+					"hidden": true
+				}
+			},
+			{
+				"type": "vscode-edge-devtools.debug",
+				"name": "Open Edge DevTools",
+				"request": "attach",
+				"url": "https://mainnet.infura.io/v3/e37f7132d6c7441f950f6c36a0f626c0",
+				"presentation": {
+					"hidden": true
+				}
+			}
+		],
+		"compounds": [
+			{
+				"name": "Launch Edge Headless and attach DevTools",
+				"configurations": [
+					"Launch Microsoft Edge in headless mode",
+					"Open Edge DevTools"
+				]
+			},
+			{
+				"name": "Launch Edge and attach DevTools",
+				"configurations": [
+					"Launch Microsoft Edge",
+					"Open Edge DevTools"
+				]
+			}
+		]
+	}
 }

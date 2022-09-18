@@ -1,0 +1,27 @@
+{
+	"folders": [
+		{
+			"name": "ethatomicswap",
+			"path": "."
+		},
+		{
+			"name": "gochain",
+			"path": "../gochain"
+		},
+		{
+			"name": "EIP20",
+			"path": "../EIP20"
+		}
+	],
+	"settings": {
+		"solidity-va.hover": false,
+		"solidity-va.deco.arguments": false,
+		"solidity-va.outline.enable": false,
+		"solidity-va.diagnostics.cdili_json.import": false,
+		"solidity-va.tools.surya.option.negModifiers": true,
+		"solidity-va.preview.markdown": false,
+		"files.autoSave": "onWindowChange",
+		"editor.renderWhitespace": "trailing",
+		"typescript.format.insertSpaceAfterTypeAssertion": false
+	}
+}
